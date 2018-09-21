@@ -1,0 +1,44 @@
+.letter-size {
+    position: relative;
+    height: 297mm;
+    width: 210mm;
+    margin: 8mm;
+}
+
+.headlinetext {
+    margin: 0;
+}
+
+.title-hr {
+    margin: 0;
+}
+
+.make-right {
+    position: absolute;
+    top: 17px;
+    right: 0;
+}
+
+.tech-skills {
+    margin: 0;
+}
+
+a { text-decoration: none; }
+
+a:hover, a:visited, a:active {
+    text-decoration: none;
+}
+
+@media print {  
+    @page {
+      size: 210mm 297mm; /* landscape */
+      /* you can also specify margins here: */
+      margin: 8mm;
+      margin-right: 8mm; /* for compatibility with both A4 and Letter */
+    }
+    a { text-decoration: none; }
+
+    a:hover, a:visited, a:active {
+    text-decoration: none;
+}
+  }
